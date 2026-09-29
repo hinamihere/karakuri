@@ -1,0 +1,25 @@
+version: 1
+id: kara-yayoi-invoice-print
+name: "弥生会計: 請求書の印刷 / Yayoi: print invoice"
+description: >-
+  弥生会計 2024 の請求書一覧から対象の請求書を選択し、印刷ダイアログ経由で
+  請求書を PDF として出力します。
+target_app:
+  window_title_regex: "弥生会計"
+  process_name: "Yayoi2024"
+steps:
+  - action: click
+    selector:
+      automation_id: "tab-invoices"
+    wait_after_ms: 300
+  - action: click
+    selector:
+      control_type: "ListItem"
+      name: "{{INVOICE_NO}}"
+    wait_after_ms: 200
+  - action: click
+    selector:
+      automation_id: "btn-print"
+    is_destructive: false
+    wait_after_ms: 500
+  - action: finish

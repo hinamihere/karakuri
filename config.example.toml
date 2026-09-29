@@ -1,0 +1,17 @@
+# Karakuri configuration example — copy to `config.toml and edit.
+# Only the keys the intent router reads are shown here; `[llm]` is documented
+# in contracts.md §5.4 and owned by the LLM client.
+
+[app]
+language = "ja"                      # ja | en
+hotkey = "Alt+Space"
+recipe_dir = "recipes"               # *.yaml recipes, relative to the working dir
+recipe_index_path = "models/recipe_index.faiss"
+
+[matcher]
+# Required, no default. The fetch script installs the default asset here:
+#   python scripts/fetch-embedding-model.py
+onnx_model_path = "models/multilingual-e5-small-int8.onnx"
+# The frozen Mode A / Mode B boundary (contracts.md §6.3, §9.2).
+# >= threshold -> Mode A replay, < threshold -> Mode B planning.
+similarity_threshold = 0.82

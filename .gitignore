@@ -1,0 +1,13 @@
+# Local embedding assets — fetched by scripts/fetch-embedding-model.py, never committed.
+models/
+# Telemetry is append-only local data (contracts.md §2), not source.
+logs/
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# Local environment repairs / scratch
+.vcrt/
+probe*.py
