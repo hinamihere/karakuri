@@ -1,0 +1,371 @@
+{
+  "window_title": "文字コード表",
+  "pid": 21052,
+  "raw_tree": {
+    "control_type": "Window",
+    "name": "文字コード表",
+    "automation_id": "",
+    "is_enabled": true,
+    "bounding_rect": {
+      "x": 20,
+      "y": 100,
+      "width": 650,
+      "height": 626
+    },
+    "children": [
+      {
+        "control_type": "Pane",
+        "name": "",
+        "automation_id": "108",
+        "is_enabled": true,
+        "bounding_rect": {
+          "x": 59,
+          "y": 203,
+          "width": 563,
+          "height": 393
+        }
+      },
+      {
+        "control_type": "Text",
+        "name": "コピーする文字(A):",
+        "automation_id": "107",
+        "is_enabled": true,
+        "bounding_rect": {
+          "x": 43,
+          "y": 621,
+          "width": 166,
+          "height": 20
+        }
+      },
+      {
+        "control_type": "Edit",
+        "name": "コピーする文字(A):",
+        "automation_id": "104",
+        "is_enabled": true,
+        "bounding_rect": {
+          "x": 209,
+          "y": 613,
+          "width": 220,
+          "height": 40
+        },
+        "value": "\r"
+      },
+      {
+        "control_type": "Button",
+        "name": "選択(S)",
+        "automation_id": "103",
+        "is_enabled": true,
+        "bounding_rect": {
+          "x": 437,
+          "y": 613,
+          "width": 100,
+          "height": 35
+        }
+      },
+      {
+        "control_type": "Button",
+        "name": "コピー(C)",
+        "automation_id": "102",
+        "is_enabled": false,
+        "bounding_rect": {
+          "x": 545,
+          "y": 613,
+          "width": 100,
+          "height": 35
+        }
+      },
+      {
+        "control_type": "CheckBox",
+        "name": "詳細表示(V)",
+        "automation_id": "119",
+        "is_enabled": true,
+        "bounding_rect": {
+          "x": 43,
+          "y": 656,
+          "width": 128,
+          "height": 30
+        },
+        "is_selected": false
+      },
+      {
+        "control_type": "Text",
+        "name": "フォント(F):",
+        "automation_id": "141",
+        "is_enabled": true,
+        "bounding_rect": {
+          "x": 43,
+          "y": 161,
+          "width": 96,
+          "height": 23
+        }
+      },
+      {
+        "control_type": "ComboBox",
+        "name": "フォント(F):",
+        "automation_id": "105",
+        "is_enabled": true,
+        "bounding_rect": {
+          "x": 145,
+          "y": 153,
+          "width": 396,
+          "height": 26
+        },
+        "value": "Arial",
+        "children": [
+          {
+            "control_type": "Text",
+            "name": "フォント(F):",
+            "automation_id": "",
+            "is_enabled": true,
+            "bounding_rect": {
+              "x": 3,
+              "y": 3,
+              "width": 369,
+              "height": 20
+            }
+          },
+          {
+            "control_type": "Button",
+            "name": "開く",
+            "automation_id": "DropDown",
+            "is_enabled": true,
+            "bounding_rect": {
+              "x": 521,
+              "y": 154,
+              "width": 19,
+              "height": 24
+            }
+          }
+        ]
+      },
+      {
+        "control_type": "Button",
+        "name": "ヘルプ(H)",
+        "automation_id": "100",
+        "is_enabled": true,
+        "bounding_rect": {
+          "x": 549,
+          "y": 153,
+          "width": 100,
+          "height": 35
+        }
+      },
+      {
+        "control_type": "ScrollBar",
+        "name": "",
+        "automation_id": "204",
+        "is_enabled": true,
+        "bounding_rect": {
+          "x": 623,
+          "y": 204,
+          "width": 28,
+          "height": 391
+        },
+        "children": [
+          {
+            "control_type": "Button",
+            "name": "1 行上",
+            "automation_id": "UpButton",
+            "is_enabled": true,
+            "bounding_rect": {
+              "x": 623,
+              "y": 204,
+              "width": 28,
+              "height": 21
+            }
+          },
+          {
+            "control_type": "Thumb",
+            "name": "表示位置",
+            "automation_id": "ScrollbarThumb",
+            "is_enabled": true,
+            "bounding_rect": {
+              "x": 623,
+              "y": 225,
+              "width": 28,
+              "height": 21
+            }
+          },
+          {
+            "control_type": "Button",
+            "name": "下へドラッグ",
+            "automation_id": "DownPageButton",
+            "is_enabled": true,
+            "bounding_rect": {
+              "x": 623,
+              "y": 246,
+              "width": 28,
+              "height": 328
+            }
+          },
+          {
+            "control_type": "Button",
+            "name": "1 行下",
+            "automation_id": "DownButton",
+            "is_enabled": true,
+            "bounding_rect": {
+              "x": 623,
+              "y": 574,
+              "width": 28,
+              "height": 21
+            }
+          }
+        ]
+      },
+      {
+        "control_type": "TitleBar",
+        "name": "",
+        "automation_id": "",
+        "is_enabled": true,
+        "bounding_rect": {
+          "x": 49,
+          "y": 103,
+          "width": 612,
+          "height": 35
+        },
+        "children": [
+          {
+            "control_type": "MenuBar",
+            "name": "システム",
+            "automation_id": "MenuBar",
+            "is_enabled": true,
+            "bounding_rect": {
+              "x": 29,
+              "y": 109,
+              "width": 28,
+              "height": 28
+            },
+            "children": [
+              {
+                "control_type": "MenuItem",
+                "name": "システム",
+                "automation_id": "",
+                "is_enabled": true,
+                "bounding_rect": {
+                  "x": 29,
+                  "y": 109,
+                  "width": 28,
+                  "height": 28
+                }
+              }
+            ]
+          },
+          {
+            "control_type": "Button",
+            "name": "最小化",
+            "automation_id": "",
+            "is_enabled": true,
+            "bounding_rect": {
+              "x": 483,
+              "y": 101,
+              "width": 60,
+              "height": 37
+            }
+          },
+          {
+            "control_type": "Button",
+            "name": "最大化",
+            "automation_id": "",
+            "is_enabled": false,
+            "bounding_rect": {
+              "x": 543,
+              "y": 101,
+              "width": 59,
+              "height": 37
+            }
+          },
+          {
+            "control_type": "Button",
+            "name": "閉じる",
+            "automation_id": "",
+            "is_enabled": true,
+            "bounding_rect": {
+              "x": 602,
+              "y": 101,
+              "width": 60,
+              "height": 37
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "runs": [
+    {
+      "hash": "296bde1883aa6dd76b30876357a1b5e7cc2ba29fe7591f34ec74b1e421f41153",
+      "tokens": 494,
+      "token_backend": "tiktoken:cl100k_base",
+      "nodes": 7,
+      "effective_max_depth": 2,
+      "events": [
+        {
+          "error_category": "pruner_depth_cut",
+          "detail": "dropped at depth 3 > 2",
+          "depth": 3,
+          "automation_id": "DropDown",
+          "control_type": "Button",
+          "name": "開く"
+        },
+        {
+          "error_category": "pruner_depth_cut",
+          "detail": "dropped at depth 3 > 2",
+          "depth": 3,
+          "automation_id": "MenuBar",
+          "control_type": "MenuBar",
+          "name": "システム"
+        }
+      ]
+    },
+    {
+      "hash": "296bde1883aa6dd76b30876357a1b5e7cc2ba29fe7591f34ec74b1e421f41153",
+      "tokens": 494,
+      "token_backend": "tiktoken:cl100k_base",
+      "nodes": 7,
+      "effective_max_depth": 2,
+      "events": [
+        {
+          "error_category": "pruner_depth_cut",
+          "detail": "dropped at depth 3 > 2",
+          "depth": 3,
+          "automation_id": "DropDown",
+          "control_type": "Button",
+          "name": "開く"
+        },
+        {
+          "error_category": "pruner_depth_cut",
+          "detail": "dropped at depth 3 > 2",
+          "depth": 3,
+          "automation_id": "MenuBar",
+          "control_type": "MenuBar",
+          "name": "システム"
+        }
+      ]
+    },
+    {
+      "hash": "296bde1883aa6dd76b30876357a1b5e7cc2ba29fe7591f34ec74b1e421f41153",
+      "tokens": 494,
+      "token_backend": "tiktoken:cl100k_base",
+      "nodes": 7,
+      "effective_max_depth": 2,
+      "events": [
+        {
+          "error_category": "pruner_depth_cut",
+          "detail": "dropped at depth 3 > 2",
+          "depth": 3,
+          "automation_id": "DropDown",
+          "control_type": "Button",
+          "name": "開く"
+        },
+        {
+          "error_category": "pruner_depth_cut",
+          "detail": "dropped at depth 3 > 2",
+          "depth": 3,
+          "automation_id": "MenuBar",
+          "control_type": "MenuBar",
+          "name": "システム"
+        }
+      ]
+    }
+  ],
+  "yaml": "tree:\n  temp_id: 1\n  control_type: Window\n  name: 文字コード表\n  is_enabled: true\n  children_count: 6\n  bounding_rect: {x: 20, y: 100, width: 650, height: 626}\n  children:\n    - temp_id: 2\n      control_type: Edit\n      name: \"コピーする文字(A):\"\n      automation_id: \"104\"\n      is_enabled: true\n      value: \"\\r\"\n      children_count: 0\n      bounding_rect: {x: 209, y: 613, width: 220, height: 40}\n    - temp_id: 3\n      control_type: Button\n      name: 選択(S)\n      automation_id: \"103\"\n      is_enabled: true\n      children_count: 0\n      bounding_rect: {x: 437, y: 613, width: 100, height: 35}\n    - temp_id: 4\n      control_type: Button\n      name: コピー(C)\n      automation_id: \"102\"\n      is_enabled: false\n      children_count: 0\n      bounding_rect: {x: 545, y: 613, width: 100, height: 35}\n    - temp_id: 5\n      control_type: CheckBox\n      name: 詳細表示(V)\n      automation_id: \"119\"\n      is_enabled: true\n      is_selected: false\n      children_count: 0\n      bounding_rect: {x: 43, y: 656, width: 128, height: 30}\n    - temp_id: 6\n      control_type: ComboBox\n      name: \"フォント(F):\"\n      automation_id: \"105\"\n      is_enabled: true\n      value: Arial\n      children_count: 0\n      bounding_rect: {x: 145, y: 153, width: 396, height: 26}\n    - temp_id: 7\n      control_type: Button\n      name: ヘルプ(H)\n      automation_id: \"100\"\n      is_enabled: true\n      children_count: 0\n      bounding_rect: {x: 549, y: 153, width: 100, height: 35}\n"
+}

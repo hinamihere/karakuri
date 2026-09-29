@@ -1,0 +1,21 @@
+[project]
+name = "karakuri"
+version = "0.1.0"
+description = "Karakuri (機巧デスクトップ) — local-first a11y-tree desktop automation core"
+requires-python = ">=3.11"
+# The core has no cloud-mandatory dependency and never calls the network at
+# runtime. tiktoken ships the cl100k_base vocabulary the §9.1 token budget is
+# measured with; when it is unavailable (air-gapped install without a warm
+# cache) the pipeline falls back to a conservative local estimator.
+dependencies = ["tiktoken>=0.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "PyYAML>=6"]
+# Verification harness for KARA-6 (real-window dump). Replaced by the UIA OS
+# Adapter from KARA-5 once that lands.
+verify = ["pywinauto>=0.6.8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
