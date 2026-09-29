@@ -1,0 +1,32 @@
+version: 1
+id: kara-bugyo-expense-register
+name: "奉行: 経費伝票の登録 / Bugyo: register expense slip"
+description: >-
+  奉行の経費入力画面に経費伝票を登録します。発生日・金額・摘要・勘定科目を
+  入力して登録ボタンを押し、伝票番号を控えます。
+target_app:
+  window_title_regex: "奉行"
+  process_name: "Hosho"
+steps:
+  - action: click
+    selector:
+      automation_id: "btn-expense-new"
+    wait_after_ms: 200
+  - action: set_value
+    selector:
+      automation_id: "txt-expense-date"
+    value: "{{EXPENSE_DATE}}"
+  - action: set_value
+    selector:
+      automation_id: "txt-expense-amount"
+    value: "{{EXPENSE_AMOUNT}}"
+  - action: set_value
+    selector:
+      automation_id: "txt-expense-memo"
+    value: "{{EXPENSE_MEMO}}"
+  - action: click
+    selector:
+      automation_id: "btn-expense-register"
+    is_destructive: true
+    wait_after_ms: 500
+  - action: finish

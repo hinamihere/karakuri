@@ -1,0 +1,24 @@
+version: 1
+id: kara-sap-gui-post-voucher
+name: "SAP GUI: 仕訳伝票の転記 / SAP GUI: post accounting document"
+description: >-
+  SAP GUI の FB01 画面で会計伝票を転記し、認証（ポスト）します。伝票日付・
+  会社コード・勘定科目・金額を入力して登録します。
+target_app:
+  window_title_regex: "SAP"
+  process_name: "sapgui"
+steps:
+  - action: set_value
+    selector:
+      automation_id: "wnd[0]/usr/ctxtBKPF-BUDAT"
+    value: "{{DOC_DATE}}"
+  - action: set_value
+    selector:
+      automation_id: "wnd[0]/usr/ctxtBKPF-BUKRS"
+    value: "{{COMPANY_CODE}}"
+  - action: click
+    selector:
+      automation_id: "wnd[0]/tbar[0]/btn[11]"
+    is_destructive: true
+    wait_after_ms: 800
+  - action: finish

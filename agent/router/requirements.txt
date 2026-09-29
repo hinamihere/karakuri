@@ -1,0 +1,12 @@
+# Intent router (KARA-9) runtime dependencies.
+# Install into an isolated environment, e.g.:
+#   uv venv .venv && uv pip install --python .venv -r agent/router/requirements.txt
+#
+# onnxruntime also needs the Microsoft Visual C++ 2015-2022 Redistributable
+# (vcruntime140_1.dll, msvcp140_1.dll) on Windows — see agent/router/README.md.
+onnxruntime>=1.20
+tokenizers>=0.20
+numpy>=1.26
+faiss-cpu>=1.8
+pyyaml>=6.0
+pytest>=8.0

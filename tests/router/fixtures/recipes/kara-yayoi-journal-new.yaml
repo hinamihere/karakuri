@@ -1,0 +1,32 @@
+version: 1
+id: kara-yayoi-journal-new
+name: "弥生会計: 仕訳の新規作成 / Yayoi: new journal entry"
+description: >-
+  弥生会計 2024 の仕訳入力画面で新しい仕訳レコードを作成します。借方・貸方の
+  科目コードと金額を入力し、保存ボタンで登録します。
+target_app:
+  window_title_regex: "弥生会計"
+  process_name: "Yayoi2024"
+steps:
+  - action: click
+    selector:
+      automation_id: "btn-journal-new"
+    wait_after_ms: 200
+  - action: set_value
+    selector:
+      automation_id: "txt-debit-code"
+    value: "{{DEBIT_CODE}}"
+  - action: set_value
+    selector:
+      automation_id: "txt-credit-code"
+    value: "{{CREDIT_CODE}}"
+  - action: set_value
+    selector:
+      automation_id: "txt-amount"
+    value: "{{AMOUNT}}"
+  - action: click
+    selector:
+      automation_id: "btn-save"
+    is_destructive: true
+    wait_after_ms: 500
+  - action: finish
